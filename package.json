@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pm2 start index.js --name libp2p-node -i max"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "@libp2p/peer-id-factory": "^1.0.18",
     "@libp2p/pubsub-peer-discovery": "^6.0.2",
     "@libp2p/websockets": "^3.0.4",
-    "libp2p": "^0.39.2"
+    "libp2p": "^0.39.2",
+    "pm2": "^5.2.0"
   }
 }
